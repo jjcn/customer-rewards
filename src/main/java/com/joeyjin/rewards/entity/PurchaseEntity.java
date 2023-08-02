@@ -1,8 +1,8 @@
 package com.joeyjin.rewards.entity;
 
 import com.joeyjin.rewards.entity.type.YearMonthIntegerType;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import org.hibernate.annotations.TypeDef;
 
 import java.time.YearMonth;

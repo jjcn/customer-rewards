@@ -1,8 +1,6 @@
 package com.joeyjin.rewards.entity.type;
 
 import org.hibernate.type.AbstractSingleColumnStandardBasicType;
-import org.hibernate.type.descriptor.java.JavaType;
-import org.hibernate.type.descriptor.jdbc.JdbcType;
 import org.hibernate.type.descriptor.sql.IntegerTypeDescriptor;
 
 import java.time.YearMonth;
@@ -15,7 +13,7 @@ public class YearMonthIntegerType extends AbstractSingleColumnStandardBasicType<
     public static final YearMonthIntegerType INSTANCE = new YearMonthIntegerType();
 
     public YearMonthIntegerType() {
-        super((JdbcType) IntegerTypeDescriptor.INSTANCE, (JavaType<YearMonth>) YearMonthTypeDescriptor.INSTANCE);
+        super(IntegerTypeDescriptor.INSTANCE, YearMonthTypeDescriptor.INSTANCE);
     }
 
     public String getName() {
